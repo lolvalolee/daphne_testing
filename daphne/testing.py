@@ -148,7 +148,7 @@ class DaphneProcess(multiprocessing.Process):
 
         try:
             # Create the server class
-            endpoints = build_endpoint_description_strings(host=self.host, port=0)
+            endpoints = build_endpoint_description_strings(host=self.host, port=9999)
             self.server = Server(
                 application=self.application,
                 endpoints=endpoints,
